@@ -1,0 +1,318 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/******* ALL ********/
+@import url('https://fonts.googleapis.com/css?family=Ribeye|Nanum+Brush+Script|Special+Elite|Amatic+SC|VT323|Megrim|Expletus+Sans');
+
+* {
+    background-color: hsl(50, 47%, 85%);
+}
+
+a,a:visited,a:hover,a:active{
+	transition:0.5s color ease, 0.5s text-decoration ease;
+	text-decoration:none;
+	color:hsl(144, 27%, 33%);
+}
+a:visited{
+	color:purple;
+}
+a:hover{
+	color:red;
+}
+
+/**************App.js - Site name and navigation bar ************/
+.App {
+  width: 1000px;
+}
+
+.App header {
+  height: 3.1em;
+  border-bottom: 7px solid hsl(144, 27%, 33%);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.65em;
+  width: 100%;
+}
+
+.App header h1 {
+  float: left;
+  width: 30%;
+  padding-bottom: 0;
+  font-family: 'Megrim', 'Impact';
+  font-size: 3.8em;
+  color: darkblue; /*hsl(144, 27%, 33%);*/
+  text-shadow: 0 0 3px #FF0000;
+  font-weight: bolder;
+  margin-top: 0;
+  margin-left: 1em;
+}
+
+.App header nav div{
+  font-family: 'Special Elite', 'sans serif';
+  font-size: 2em;
+  top: 1em;
+  color: darkgray;
+  text-align: center;
+  width: 30%;
+  float: left;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.App header .link2landing a, .App header .link2library a{
+  display: block;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  border-left: 1px solid hsl(102, 70%, 70%);
+  border-right: 1px solid hsl(102, 70%, 70%);
+  border-top: 1px solid hsl(102, 70%, 70%);
+  line-height: 1.75;
+  background-color: white;
+}
+.App header .link2landing a:focus, .App header .link2library a:focus {
+  background-color: hsla(144, 27%, 33%, 50%);
+}
+
+/*****************Landing page***************/
+
+.landing {
+  background: radial-gradient(circle, hsl(0, 100%, 50%, .3), hsla(50, 100%, 50%, .3), hsl(204, 99%, 54%, .3));
+  height: 900px;
+}
+
+.landing .hero-title{
+    float: left;
+    font-family: 'Amatic SC', 'Sans serif';
+    font-size: 8em;
+    font-weight: bolder;
+    margin-left: 7.5%;
+    line-height: 1.5;
+    width: 80%;
+    background: none;
+}
+
+.landing .point {
+  float:left;
+  width: 30%;
+  background: none;
+  margin-right: 2%;
+  margin-bottom: 1em;
+  margin-top: 20%;
+}
+
+.landing .selling-points .point h2 {
+  font-family: 'Expletus Sans', 'Ariel';
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+  color: purple; /*hsl(51, 39%, 32%);*/
+  margin-bottom: 0.1em;
+  margin-left: 1em;
+  background: none;
+}
+
+.landing .point-description {
+  font-family: 'VT323', 'Ariel';
+  font-size: 1.5em;
+  text-align: left;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  margin-left: 1em;
+  background: none;
+}
+
+/****************Library page*************/
+
+.library {
+  font-family: 'Special Elite', 'Courier';
+  position: relative;
+  width: 100%;
+  height: 900px;
+}
+
+.library a {
+  margin-left: 2%;
+  float: left;
+  width: 47%;
+}
+.library a img {
+  width: 100%;
+}
+.library a div:nth-of-type(1) {
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+.library a div:nth-of-type(2) {
+    font-weight: bolder;
+    line-height: 1.4em;
+}
+
+/********* Album page *************/
+
+.album {
+  overflow: auto;
+  padding: 0 6em 3em 6em;
+}
+
+#album-cover-art {
+  float: left;
+  margin-left: 5%;
+  top: 1%;
+  width: 40%;
+  opacity: 1;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 7px 16px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* album title banner */
+
+.album-details {
+  float:right;
+  margin-top: 5%;
+  margin-right: 5%;
+  text-align: center;
+  color: hsl(280,100%,20%);
+  width: 45%;
+}
+
+.album-details #album-title, .album-details .artist, .album-details #release-info{
+  background: none;
+  font-family: 'Special Elite', 'Courier';
+}
+.album-details #album-title {
+  padding-top: 0.2em;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+.album-details .artist {
+  font-size: 1.75em;
+  font-weight: lighter;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+.album-details #release-info {
+  font-size: 1.25em;
+  padding-bottom: 0.2em;
+}
+
+/* player buttons */
+
+.player-bar{
+  position: fixed;
+  top: 90%;
+  left: 10%;
+  width: 80%;
+  height: 3em;
+  background: none;
+}
+
+.player-bar > * {
+  background: radial-gradient(darkgray, gray, lightgray);
+  border-radius: 10px;
+  border-style: outset;
+  display: inline-block;
+}
+
+#previous, #play-pause, #next {
+    height: 2em;
+}
+
+.player-bar span {
+  background: none;
+}
+.current-bar-val {
+  color: white;
+  font-size: 0.9em;
+  font-family: 'Candara', 'Courier';
+  background: none;
+}
+#buttons {
+  width: 30%;
+}
+#time-control {
+  width: 30%;
+  left: 28%;
+}
+#volume-control {
+  width: 30%;
+  left: 70%;
+}
+
+/* song list table */
+#song-list{
+  width: 75%;
+  border-collapse: collapse;
+  border-left: hsl(144, 27%, 33%) solid 6px;
+  float: left;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+#song-list td {
+    border-bottom: 2px dotted #fff;
+    border-top: 2px dotted #fff;
+    text-align: left;
+}
+#song-list .ion-play {
+  background: none;
+}
+
+#song-list .songNumCell{
+  width: 8%;
+  padding-left: 0.4em;
+}
+#song-list .songTitleCell{
+  width: 82%;
+}
+#song-list .songDurationCell{
+  width: 10%;
+  text-align: right;
+}
+/*#song-list tr:nth-child(even) td{
+  background-color: lightgray;
+}*/
+#song-list tr:hover {
+  border: 2px solid hsl(144, 27%, 33%);
+}
+#song-list tr:hover td{
+    background-color: #ffffff;
+}
+/* play-pause-track logo toggle */
+.songNumCell .ion-play {
+  display: none;
+}
+.songNumCell #just-play {
+  display: inline;
+}
+.songRow:hover .songNumCell .trackNumber{
+    display: none;
+}
+.songRow:hover .songNumCell .ion-play{
+  display:inline;
+}
